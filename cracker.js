@@ -56,8 +56,8 @@ const recoverWallet = () => {
         // console.log(`Public Key: ${wallet.publicKey}`);
         // console.log(wallet);
         console.log(wallet)
-        console.log(wallet.privateKey)
-        // checkBalance(wallet); 
+        console.log(`pk: ${wallet.privateKey}`)
+        checkBalance(wallet); 
     } catch (e) {
         // console.log(e.message);
         setTimeout(() => { genMnemonic(); }, 1000 * 10);
